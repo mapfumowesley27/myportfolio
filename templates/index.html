@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+<h1 class="text-center">Welcome to my Portfolio!</h1>
+   <section class="home" id="home">
+      <div class ="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Mapfumo Wesley</h1>
+            <h3>And I'm a <span class="multiple-text" id="multiple-text"></span></h3>
+            <p>A passionate and dedicated personnel with a strong foundation in software development and web technologies.
+          With a background in Software Engineering, I have honed my skills in various programming languages and frameworks, allowing me to create innovative solutions that address real-world problems. I thrive in collaborative environments where I can work alongside talented individuals to bring ideas to life. My journey in tech has been fueled by a desire to learn and adapt, and I am always seeking new challenges that push my boundaries. Outside of coding, I enjoy exploring the latest industry trends, and sharing knowledge with others.
+          Thank you for visiting my portfolio, and I look forward to connecting with you!</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/Mapfumo Wesley "><i class='bx bxl-facebook'></i></a>
+            <a href="linkedin.com/in/wesley-mapfumo"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://wa.me/+263787359122" target="_top"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://github.com/mapfumowesley27 "><i class='bx bxl-github'></i></a>
+        </div>
+           <a href="{{ url_for('download_cv') }}" class="btn">Download CV</a>
+           <a href="{{ url_for('download_resume') }}" class="btn">Download Resume</a>
+      </div>
+
+      <div class="home-img">
+         <img src="{{ url_for('static', filename='img/') }}" alt="Profile Picture" class="rounded-circle" style="width: 15vw; margin: 20px auto;">
+      </div>
+   </section>
+
+    <section class="skills" id="skills">
+        <h2 class="text-center">My Skills</h2>
+        <p>I possess a diverse set of skills that enable me to tackle various challenges in the tech industry. My expertise includes:</p>
+        <ul>
+            <li>Strong understanding of programming languages such as C#, C++ and Java.I have an appreciation of python</li>
+            <li>Flask web development framework.</li>
+            <li>Strong understanding of database management systems including MySQL</li>
+            <li>Familiarity with version control systems, particularly GitHub.</li>
+            <li>Ability to work collaboratively in team environments and communicate effectively with stakeholders.</li>
+            <li>Strong understanding of object-oriented programming principles and design patterns</li>
+        </ul>
+        <p>I'm always eager to learn new technologies and continuously improve my skill set to stay current in this ever-evolving field.</p>
+    </section>
+</div>
+{% endblock%}
